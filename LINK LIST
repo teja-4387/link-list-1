@@ -1,0 +1,28 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+struct Node {
+    int data;
+    Node * next;
+}
+Node* head = NULL;
+void insertEnd(int num){
+    Node * newNode = new Node();
+    newNode->data = num;
+    newNode->next = NULL;
+    if(head==Null){
+        head = newNode
+    }
+    else{
+        Node * temp = head;
+        while(temp-> !=NULL){
+            temp= temp-> next;
+        }
+        temp->next = newNode;
+    }
+}
+int main(){
+    insertEnd(5);
+    insertEnd(10);
+    insertEnd(15);
+}
